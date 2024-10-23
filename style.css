@@ -1,0 +1,122 @@
+
+*{
+margin: 0px;
+padding: 0px;
+}
+.outbox{
+     border: solid 1px;
+     height: 100px;
+     display: flex;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 100px;
+   
+}
+#in1{
+    width: 200px;
+}
+#in2{
+ width: 700px;
+ text-align:center ;
+ background-color: antiquewhite;
+}
+#in3{
+    width: 300px;
+}
+#clgname{
+    font-size: 22px;
+}
+#name1{
+    font-size: 16px;
+    color: red;
+}
+#scrolltext{
+    font-size: 20px;
+    color: blueviolet;
+    font-weight:bold ;
+}
+#navbox{
+    border: solid 1px;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 160px;
+    float: left;
+    background-color: yellow;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+
+}
+ul{
+list-style: none;
+}
+ul li a{
+    font-size: 20px;
+    color:black ;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: chartreuse;
+}
+ul li ul li{
+    width: 150px;
+}
+ul li ul li:hover{
+    background-color: aqua;
+}
+.outerbox{
+    border: solid 1px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+#inbox1,#inbox2,#inbox3{
+    border: solid 1px;
+    height: 300px;
+    z-index: -1;
+}
+#inbox1{
+    width: 600px;
+    background-image: url(img6.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px  300px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+   
+}
+@keyframes imgchange{
+    0%{
+        background-image: url(images\ 2.jpg);
+    }
+    10%{
+        background-image: url(image4.jpg);
+    }
+    20%{
+        background-image: url(images3.jpg);
+    }
+    30%{
+        background-image: url(download\ 5.jpg);
+    }
+    40%{
+        background-image: url(img6.jpg);
+    }
+    50%{
+        background-image: url(img1.jpg);
+    }
+}
+#inbox2,#inbox3{
+    width: 250px;
+    text-align: center;
+}
+
